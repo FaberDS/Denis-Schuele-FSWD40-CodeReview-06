@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cooking-thek</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/3.3/examples/carousel/carousel.css" rel="stylesheet">
+    <!-- some Bootstrap interactions relay on jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-transparent">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand lead"  href="#">FaberDesign</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active lead"><a href="#"><i class="glyphicon glyphicon-home"></i> Home <span class="sr-only">(current)</span></a></li>
+                    <li class="lead"><a href="#inputContentBtn"><i class="glyphicon glyphicon-plus"></i> Add Content</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle lead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="filterOptions">
+                            <li><a class="filter all active" href="#" id="all" data="all">ALL</a></li>
+                            <li><a class="filter books" href="#" id="book">Book's</a></li>
+                            <li><a class="filter games" href="#" id="game">Game's</a></li>
+                            <li><a class="filter cds" href="#" id="cd">CD's</a></li>
+                            <li><a class="filter posters" href="#" id="poster">Poster's</a></li>
+                            <li><a class="filter dvds" href="#" id="dvd">DVD's</a></li>
+                        </ul>
+                    </li>
+                   <!--  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon-glyphicon-search"></i> Detailed Sorting<span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="filterOptions">
+                            <li><a class="filter all active" href="#" id="all" data="all">ALL</a></li>
+                            <li><a class="filter books" href="#" id="book">Title</a></li>
+                            <li><a class="filter games" href="#" id="game">Genre</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="" href="#" id="likeSortBtn">Like's</a></li>
+                            
+                        </ul> -->
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div id="content">
+        <div class="container">
+            <!-- main Image  -->
+            <div class="row row-1">
+                <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-9 col-sm-offset-1" id="top-img">
+                    <p id="mainTitleS">
+                        <s>Media</s>
+                    </p>
+                    <p id="mainTitle">Cooking- thek</p>
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="row" id="mainContent">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row  addContentRow">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <button class="btn btn-primary btn-lg btn-block" id="showFormContentBtn" type="button" name="" value="Add Content">Add Content</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <form id="formAddContentForm">
+                <div class="row fix">
+                    <div class="col-md-6 col-xs-12">
+                        <h2>  Add your Content  </h2>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Type:</h5>
+                        <input type="radio" name="type" value="book" checked="checked" />Book
+                        <input type="radio" name="type" value="game" />Game
+                        <input type="radio" name="type" value="cd" />CD
+                        <input type="radio" name="type" value="poster" />Poster
+                        <input type="radio" name="type" value="dvd" />DVD
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Title:</h5>
+                        <input id="title" type="text" class="form-control" placeholder="Title" name="title">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Genre:</h5>
+                        <input id="genre" type="text" class="form-control" placeholder="Genre" name="genre">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Publisher: </h5>
+                        <input id="publisher" type="text" class="form-control" placeholder="Publisher" name="publisher">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Image </h5>
+                        <h6>Just past the image link here:</h6>
+                        <input id="image" type="text" class="form-control" placeholder="Image URL" name="image">
+                    </div>
+                     <div class="col-md-6 col-xs-12">
+                        <h5>Author: </h5>
+                        <p>only for Book's</p>
+                        <input id="image" type="text" class="form-control" placeholder="Autor" name="autor">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Director: </h5>
+                        <p>only for DVD's</p>
+                        <input id="image" type="text" class="form-control" placeholder="Regisseur" name="Regisseur">
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Description: </h5>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h5>Rating: </h5>
+                        <input type="radio" name="rating" value="1" checked="checked" />&#x2605
+                        <input type="radio" name="rating" value="2" />&#x2605 &#x2605
+                        <input type="radio" name="rating" value="3" />&#x2605 &#x2605 &#x2605
+                        <input type="radio" name="rating" value="4" />&#x2605 &#x2605 &#x2605 &#x2605
+                        <input type="radio" name="rating" value="5" />&#x2605 &#x2605 &#x2605 &#x2605 &#x2605
+                    </div>
+                </div>
+                <button id="inputContentBtn" type="submit" class="pushbtn btn btn-info btn-block">Add to Content</button>
+            </form>
+            <div id="displayContent"></div>
+        </div>
+        
+        <footer id="footer">
+        </footer>
+    </div>
+    </div>
+
+    <script src="js/data/cds.js"></script>
+    <script src="js/data/games.js"></script>
+    <script src="js/data/posters.js"></script>
+    <script src="js/data/dvds.js"></script>
+    <script src="js/data/books.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

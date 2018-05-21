@@ -1,0 +1,138 @@
+@media screen and (max-width: 1025px) {
+  .item-media img {
+    width: 220px !important; } }
+.backgroundIMG, #content #top-img, .btn-primary #footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+body {
+  background-image: url("");
+  background-size: contain;
+  padding: 0;
+  margin: 0; }
+
+.icon-bar {
+  background-color: #377BB5;
+  opacity: 1; }
+
+.navbar {
+  font-family: "Amatic SC", cursive; }
+
+#content #top-img {
+  background-image: url("https://images.unsplash.com/photo-1508067655605-cfeb389c1996?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bece9296515178990214e3cd40b71dcd&auto=format&fit=crop&w=800&q=60");
+  padding: 20px;
+  min-width: 100%;
+  margin-left: 0 !important;
+  background-color: yellow;
+  font-family: "Amatic SC", cursive;
+  font-size: 120px; }
+  #content #top-img #mainTitleS {
+    color: #ccc; }
+  #content #top-img #mainTitle {
+    color: white; }
+#content .mediaRow {
+  border-top: 2px solid #ccc;
+  position: relative;
+  font-family: "Amatic SC", cursive;
+  color: #999; }
+  #content .mediaRow .rowHeadline {
+    font-size: 70px;
+    font-weight: bold;
+    color: #377BB5;
+    margin-top: 15px;
+    margin-left: 15px; }
+#content .container-media {
+  padding: 10px;
+  margin-top: 10px; }
+  #content .container-media .item-media {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    border: 2px solid #545130;
+    box-shadow: 3px 3px 3px #377BB5;
+    padding: 15px;
+    height: 750px; }
+  #content .container-media .bookMediaClass {
+    height: 850px !important; }
+  #content .container-media .dvdMediaClass, #content .container-media .posterMediaClass {
+    height: 900px !important; }
+  #content .container-media .item-media p {
+    display: inline-block; }
+  #content .container-media .titleItemMedia {
+    font-size: 40px;
+    color: white; }
+  #content .container-media .subTitles {
+    font-size: 25px;
+    margin-right: 40px;
+    color: #ccc; }
+  #content .container-media .subTitles + p {
+    font-size: 25px;
+    color: #222;
+    float: right;
+    margin-right: 10px; }
+  #content .container-media #description {
+    margin-right: 0px;
+    float: none; }
+  #content .container-media .mediaImg {
+    width: 250px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    #content .container-media .mediaImg .detail-media {
+      float: left; }
+  #content .container-media .detail-media .type {
+    position: absolute;
+    bottom: 20px; }
+  #content .container-media .type {
+    padding: 10px;
+    background-color: #4C5F6A;
+    color: #ddd; }
+    #content .container-media .type .iType {
+      margin-right: 10px; }
+  #content .container-media .rating {
+    color: #4C5F6A;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: calc(50% - 70px); }
+  #content .container-media #showDetailBtn {
+    font-size: 35px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 0;
+    background-color: #6a4c5f;
+    border-color: transparent;
+    color: #ddd; }
+  #content .container-media .getDetails {
+    line-height: 2em;
+    border: 2px solid green;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-left: 25px; }
+  #content .container-media .modal-header h3 {
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block; }
+  #content .container-media .modal-header p {
+    float: right;
+    margin-top: 60px; }
+  #content .container-media .modal-body {
+    font-size: 20px; }
+
+.btn-primary {
+  font-size: 35px;
+  border-radius: 0;
+  background-color: #4C5F6A;
+  border-color: transparent;
+  color: #ddd; }
+  .btn-primary #footer {
+    margin-top: 25px;
+    height: 380px;
+    background-image: url("https://www.popatstores.co.uk/media/catalog/category/foodis-footer-image1.png"); }
+
+/*# sourceMappingURL=style.css.map */
